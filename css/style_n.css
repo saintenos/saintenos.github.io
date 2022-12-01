@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti&family=Oswald:wght@700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background:crimson;
+  background-image: url(/image/img2.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-family:'Athiti', sans-serif;
+}
