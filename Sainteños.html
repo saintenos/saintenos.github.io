@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sainteños</title>
+  <link rel="shortcut icon" href="image/bus.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.js">
+  <!-- fonr awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+	<header>
+      <a href="#" class="brand">
+      	<img src="image/logoWh.png">
+      </a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <ul>
+        	<li><a href="#1">HOME</a></li>
+        	<li><a href="#2">PACKAGES</a></li>
+        	<li><a href="#3">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <section class ="section-main" id="1">
+      <h1></h1>
+    </section>
+
+    <section class="section-two">
+      <p>For young Panamanian adults who want to know more about our customs and culture, “Sainteños” offers the best packages for getting an unforgettable experience learning about our traditions. </p>
+      <p></p>
+    </section>
+    <section class="section-three"></section>
+
+    <section class="section-four"></section>
+    <section class="section-five" id="2">
+    <div style="min-height: 1000px; max-width: 1400px;"></div>
+        <div class="container">
+            <div class="mycard">
+              <div class="cimg">
+                <img src="image/img1.png">
+              </div>
+              <div class="cdetail">
+                <h2></h2>
+      
+              </div>
+              <br><br><br><br><br><br><br><h2>MEJORANA'S TRIP</h2>
+            </div>
+            <div class="mycard">
+              <div class="cimg">
+                <img src="image/img2.png">
+              </div>
+            <div class="cdetail">
+              <h2></h2>
+            </div>
+            <br><br><br><br><br><br><br><h2>POLLERA'S TRIP</h2>
+            </div>
+            <div class="mycard">
+              <div class="cimg">
+                <img src="image/img3.png">
+              </div>
+              <div class="cdetail">
+                <h2></h2>
+              </div>
+              <br><br><br><br><br><br><br><h2>CORPUS CHRISTI'S TRIP</h2>
+            </div>
+          </div>
+    </section>
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+	    //change logo
+	    var logo = document.querySelector(".brand img");
+		if (window.scrollY>0) {
+			logo.setAttribute('src', 'image/logoBl.png');
+		}else{
+			logo.setAttribute('src', 'image/logoWh.png');
+		}
+
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+</body>
+</html>
